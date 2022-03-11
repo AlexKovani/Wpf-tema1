@@ -1,0 +1,40 @@
+﻿<Window x:Name="Калькулятор" x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="592.101" Width="402.447" FontFamily="Tw Cen MT Condensed Extra Bold" FontSize="17">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF00FFF6" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid HorizontalAlignment="Left" Height="550" Margin="10,10,0,0" VerticalAlignment="Top" Width="367">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="окно" HorizontalAlignment="Left" Margin="21,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="356" Foreground="White" Background="#FFDDDDDD"/>
+        <Button Content="%" HorizontalAlignment="Left" Margin="21,132,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20" Background="#FFFFB200"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="276,302,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20" Background="#FFFFB200"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="276,217,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20" Background="#FFFFB200"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="191,302,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="191,217,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="106,302,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="106,217,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="21,470,0,0" VerticalAlignment="Top" Width="165" Height="80" FontSize="20" Background="#FFDDDDDD"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="21,302,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="21,217,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="276,132,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20" Background="#FFFFB200"/>
+        <Button Content=")" HorizontalAlignment="Left" Margin="191,132,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20" Background="#FFFFB200"/>
+        <Button Content="(" HorizontalAlignment="Left" Margin="106,132,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20" Background="#FFFFB200"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="276,387,0,0" VerticalAlignment="Top" Width="80" Height="80" Click="Button_Click" FontSize="20" Background="#FFFFB200"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="191,387,0,0" VerticalAlignment="Top" Width="80" Height="80" Click="Button_Click_1" FontSize="20"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="276,470,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20" BorderBrush="#FF707070" Background="#FF5DFF00"/>
+        <Button Content="," HorizontalAlignment="Left" Margin="191,470,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="106,387,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="21,387,0,0" VerticalAlignment="Top" Width="80" Height="80" FontSize="20"/>
+    </Grid>
+</Window>
